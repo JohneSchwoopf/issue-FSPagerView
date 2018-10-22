@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="x7H-tp-zNq">
+            <objects>
+                <viewController storyboardIdentifier="BannerViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="vJW-Qn-v1p" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GwH-xx-ze0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="221"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AF4-OQ-EwU" customClass="FSPagerView" customModule="FSPagerView">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="221"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="221" id="nLt-jN-UIT"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0DV-DL-MaO" customClass="FSPageControl" customModule="FSPagerView">
+                                <rect key="frame" x="0.0" y="197" width="375" height="24"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="3jy-30-0WX"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Bq0-hm-7WJ" firstAttribute="trailing" secondItem="AF4-OQ-EwU" secondAttribute="trailing" id="0Vd-Ld-KQm"/>
+                            <constraint firstItem="AF4-OQ-EwU" firstAttribute="leading" secondItem="Bq0-hm-7WJ" secondAttribute="leading" id="4aK-DH-vXy"/>
+                            <constraint firstItem="AF4-OQ-EwU" firstAttribute="top" secondItem="Bq0-hm-7WJ" secondAttribute="top" id="Kde-pW-Sqn"/>
+                            <constraint firstItem="0DV-DL-MaO" firstAttribute="leading" secondItem="Bq0-hm-7WJ" secondAttribute="leading" id="Ke4-Fp-jP3"/>
+                            <constraint firstItem="Bq0-hm-7WJ" firstAttribute="trailing" secondItem="0DV-DL-MaO" secondAttribute="trailing" id="LAw-MF-zo9"/>
+                            <constraint firstItem="Bq0-hm-7WJ" firstAttribute="bottom" secondItem="AF4-OQ-EwU" secondAttribute="bottom" id="Qrb-vQ-x4g"/>
+                            <constraint firstItem="Bq0-hm-7WJ" firstAttribute="bottom" secondItem="0DV-DL-MaO" secondAttribute="bottom" id="Szy-op-7uu"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Bq0-hm-7WJ"/>
+                    </view>
+                    <size key="freeformSize" width="375" height="221"/>
+                    <connections>
+                        <outlet property="pageControl" destination="0DV-DL-MaO" id="08w-rf-hoE"/>
+                        <outlet property="pagerView" destination="AF4-OQ-EwU" id="mZX-l2-KIh"/>
+                        <outlet property="pagerViewHeightConstraint" destination="nLt-jN-UIT" id="ZhB-2A-bhV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lp6-Cd-q1I" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-103" y="-68"/>
+        </scene>
+    </scenes>
+</document>

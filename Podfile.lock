@@ -1,0 +1,16 @@
+PODS:
+  - FSPagerView (0.8.1)
+
+DEPENDENCIES:
+  - FSPagerView
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - FSPagerView
+
+SPEC CHECKSUMS:
+  FSPagerView: 4e865526acc0b0e3077e2abb29b8d10a9f395476
+
+PODFILE CHECKSUM: b2b968ff13aad1142ff2d5a9107f6d3bee1f798a
+
+COCOAPODS: 1.5.3

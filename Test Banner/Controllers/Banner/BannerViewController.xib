@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BannerViewController" customModule="Test_Banner" customModuleProvider="target">
+            <connections>
+                <outlet property="pageControl" destination="eUc-Tb-eP4" id="Sgu-6A-vav"/>
+                <outlet property="pagerView" destination="dcD-wk-PJZ" id="6in-KH-8E1"/>
+                <outlet property="pagerViewHeightConstraint" destination="a5i-bZ-OFD" id="d0d-fJ-9v1"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="221"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dcD-wk-PJZ" customClass="FSPagerView" customModule="FSPagerView">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="221"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="221" id="a5i-bZ-OFD"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eUc-Tb-eP4" customClass="FSPageControl" customModule="FSPagerView">
+                    <rect key="frame" x="0.0" y="197" width="375" height="24"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="24" id="7Sh-OU-O7J"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="dcD-wk-PJZ" secondAttribute="trailing" id="6Me-aP-lSn"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="eUc-Tb-eP4" secondAttribute="trailing" id="896-yo-8oO"/>
+                <constraint firstItem="dcD-wk-PJZ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="8I6-ZL-xIC"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="dcD-wk-PJZ" secondAttribute="bottom" id="MTB-6S-enx"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="eUc-Tb-eP4" secondAttribute="bottom" id="VGg-8U-ZD3"/>
+                <constraint firstItem="dcD-wk-PJZ" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="aeq-vj-CG6"/>
+                <constraint firstItem="eUc-Tb-eP4" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="zhr-cm-rj5"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+</document>
